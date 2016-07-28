@@ -1,0 +1,1036 @@
+
+						<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+						<html>
+						<head>
+							<title>Lilly</title>
+							<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+							<link rel="stylesheet" type="text/css" href="fonts/stylesheet.css">
+							<link rel="stylesheet" type="text/css" href="jquery.qtip.css">
+							<link rel="stylesheet" type="text/css" href="site.css">
+							<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js" type="text/javascript"></script>
+							<script src="jquery.qtip-1.0.0-rc3-dm.js" type="text/javascript"></script>
+							<script src="jquery.bpopup-0.5.1.min.js" type="text/javascript"></script>
+							<script src="site.js" type="text/javascript"></script>
+							<script type="text/javascript">
+								$(document).ready(function(){
+									// Match all <A/> links with a title tag and use it as the content (default).
+									$('a.tooltip[title]').qtip({
+										position: {
+											adjust: { x: 5, y: 10 },
+											corner: {
+												target: 'topRight',
+												tooltip: 'topLeft'
+											}
+										},
+										style: {
+											width: 150,
+											name: 'dark',
+											tip: {
+												corner: 'topLeft',
+												color: '#979797',
+												size: {
+													x: 9,
+													y : 10
+												}
+											}
+										}
+									});
+									$('a.bigtooltip[title]').qtip({
+										position: {
+											adjust: { x: 5, y: 10 },
+											corner: {
+												target: 'topRight',
+												tooltip: 'topLeft'
+											}
+										},
+										style: {
+											width: 236,
+											name: 'dark',
+											tip: {
+												corner: 'topLeft',
+												color: '#979797',
+												size: {
+													x: 9,
+													y : 10
+												}
+											}
+										}
+									});
+									$('a.bigtooltip_left[title]').qtip({
+										position: {
+											adjust: { x: 0, y: 10 },
+											corner: {
+												target: 'topLeft',
+												tooltip: 'topRight'
+											}
+										},
+										style: {
+											width: 580,
+											name: 'dark',
+											tip: {
+												corner: 'topRight',
+												color: '#979797',
+												size: {
+													x: 9,
+													y : 10
+												}
+											}
+										}
+									});
+
+									/*
+									$('a.tooltip_under[title]').qtip({
+										position: {
+											corner: {
+												target: 'bottomCenter',
+												tooltip: 'bottomCenter'
+											}
+										},
+										style: {
+											width: 96,
+											name: 'gray'
+										}
+									});
+
+									$('a.bigtooltip_under[title]').qtip({
+										position: {
+											corner: {
+												target: 'bottomCenter',
+												tooltip: 'bottomCenter'
+											}
+										},
+										style: {
+											width: 191,
+											name: 'gray'
+										}
+									});
+									$('.molecule-container li a label').each(function(){
+										if($(this).html().length < 20){
+											$(this).parent().css('padding-top', '3px');
+											$(this).parent().css('line-height', '32px');
+											$(this).parent().css('height', '32px');
+										}
+									});
+									*/
+									$('a.bigtooltip_under').hover(function(){
+											$(this).addClass('hovered');
+										},
+										function(){
+											$(this).removeClass('hovered');
+										}
+									);
+									$('a.tooltip_under').hover(function(){
+											$(this).addClass('hovered');
+										},
+										function(){
+											$(this).removeClass('hovered');
+										}
+									);
+								});
+							</script>
+						</head>
+						<body>
+						<div id="browser_notice">
+							This website is optimized for visualization with Firefox and Internet Explorer (8 or 9)
+						</div>
+							<div id="container">
+								<div id="header">
+									<img src="./img/header.png" alt="Lilly - Development Pipeline" />
+								</div>
+								<div id="content">
+									<div id="content-left">
+
+										<h1 class="DINBold"><a href="index.html">Pipeline Overview</a></h1>
+
+									<div class="menu">
+										<h2 class="DINBold">View by Therapeutic Area</h2>
+										<ul>
+								<li><a href="7.html" class="" title="Cardiovascular">Cardiovascular</a></li><li><a href="8.html" class="" title="Diabetes">Diabetes</a></li><li><a href="13.html" class="" title="Emerging Markets">Emerging Markets</a></li><li><a href="14.html" class="" title="Immunology">Immunology</a></li><li><a href="9.html" class="" title="Musculoskeletal">Musculoskeletal</a></li><li><a href="10.html" class="active" title="Neuroscience">Neuroscience</a></li><li><a href="11.html" class="" title="Oncology">Oncology</a></li>
+										</ul>
+
+										<h2 class="DINBold">View by Molecule Type</h2>
+										<ul>
+								<li><a href="17.html" class="" title="Chemical entity (small)">Chemical entity (small)</a></li><li><a href="18.html" class="" title="Biologic entity (large)">Biologic entity (large)</a></li>
+										</ul>
+									</div>
+
+										<p>
+											<a>Pipeline movement since April 19, 2016</a>
+										</p>
+										<p>
+											<a>Pipeline data through<br />July 19, 2016</a>
+										</p>
+
+
+									</div>
+									<div id="content-center">
+											<h1 class="big_h1">CLINICAL DEVELOPMENT <span>PIPELINE</span></h1>
+											<div class="cells-container">
+												<div class="cells-container-inner">
+													<h1 class="toggle active"><label class="exp_open"></label><span>Regulatory Review</span></h1>
+													<ul class="molecule-container">
+										<li id='cell-1' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-2' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-3' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-4' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-5' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-6' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li>
+													</ul>
+												</div>
+											</div>
+
+											<div class="cells-container">
+												<div class="cells-container-inner">
+													<h1 class="toggle active"><label class="exp_open"></label><span>Phase III</span></h1>
+													<ul class="molecule-container">
+										<li id='cell-37' class='big '>
+					<table cellspacing="0" cellpadding="0"><tr><td>
+						<a id="click-content-37" class="big bignme_cell bigtooltip_under" title="CLICK FOR MORE">
+							<div class="molecule-inner-content"><label>*BACE - AZD3293 </br> Alzheimer's </label><label class="toolt">New Molecular Entity</label><label class="click_for_more">Click for more</label></div>
+						</a>
+					</td></tr></table>
+
+						<div class="content-popup big" id="content-37">
+							<div class="molecule-title">
+
+								<div class="mtitle DINBold">AZD3293</div>
+								<div class="molecule-position">
+									<label>Phase III</label>
+									<label>Business area:  Bio-Medicines</label>
+								</div>
+							</div>
+
+							<div class="molecule-description">
+								LY3314814 (AZD 3293), a chemical entity, is an oral beta secretase cleaving enzyme (BACE) inhibitor. LY3314814 is being studied for the treatment of Alzheimer's disease.<br /><br> For more information on BACE - AZD3293 clinical studies, click <a href="https://clinicaltrials.gov/ct2/results?term=AZD3293+&Search=Search"target="_blank">here</A>.</u></a><br />
+<br> <p style="font-size:10px;">
+NOTE: If you click on the link above it will take you to a site maintained by a third party, which is solely responsible for its content.</p> <br /><br /> <h1>PRESS RELEASES (1/1/2010-7/19/2016)</h1>
+<p><a href="http://lilly.mediaroom.com/index.php?s=9042&item=137531">Eli Lilly And Company And AstraZeneca Announce Continuation Of Pivotal Clinical Trial For People With Early Alzheimer's Disease</a> - April 8, 2016</p>
+<p> </p>
+							</div>
+							<a class="bClose">&nbsp;</a>
+						</div>
+						<script type="text/javascript">
+							$("#click-content-37").bind('click', function(){
+								$("#content-37").bPopup();
+								return false;
+							});
+						</script>
+					</li><li id='cell-38' class='big '>
+					<table cellspacing="0" cellpadding="0"><tr><td>
+						<a id="click-content-38" class="big bignme_cell bigtooltip_under" title="CLICK FOR MORE">
+							<div class="molecule-inner-content"><label>Galcanezumab <br> cluster <br> headache</label><label class="toolt">New Molecular Entity </label><label class="click_for_more">Click for more</label></div>
+						</a>
+					</td></tr></table>
+
+						<div class="content-popup big" id="content-38">
+							<div class="molecule-title">
+
+								<div class="mtitle DINBold">Galcanezumab <br> cluster headache</div>
+								<div class="molecule-position">
+									<label>Phase III</label>
+									<label>Business area:  Research</label>
+								</div>
+							</div>
+
+							<div class="molecule-description">
+								LY2951742 (galcanezumab), a CGRP monoclonal antibody, is a biologic entity that binds and inhibits the activity of calcitonin gene related peptide (CGRP). LY2951742 is being studied for the prevention of cluster headache and migraine.
+<br /><br>
+For more information on galcanezumab clinical studies, click <a href="http://clinicaltrials.gov/ct2/results?term=LY2951742"target="_blank">here</A>.</u></a><br>
+<p style="font-size:10px;">
+NOTE: If you click on the link above it will take you to a site maintained by a third party, which is solely responsible for its content.</p><br /> <br /><br /> <h1><strong>PRESS RELEASES</strong> (1/1/2010-7/19/2016)</h1>
+<p><a href="http://lilly.mediaroom.com/index.php?s=9042&item=137444">Lilly's Investigational Medicine for Prevention of Migraine Met Primary Endpoint in a Phase 2b Study</a> – June 17, 2015<br /><br /><a href="http://lilly.mediaroom.com/index.php?s=9042&item=137274">Lilly Announces Acquisition of CGRP Antibody for Migraine Prevention from Arteaus Therapeutics</a> – January 13, 2014</p>
+							</div>
+							<a class="bClose">&nbsp;</a>
+						</div>
+						<script type="text/javascript">
+							$("#click-content-38").bind('click', function(){
+								$("#content-38").bPopup();
+								return false;
+							});
+						</script>
+					</li><li id='cell-39' class='big '>
+					<table cellspacing="0" cellpadding="0"><tr><td>
+						<a id="click-content-39" class="big bignme_cell bigtooltip_under" title="CLICK FOR MORE">
+							<div class="molecule-inner-content"><label>Solanezumab<br>Alzheimer's</label><label class="toolt">New Molecular Entity</label><label class="click_for_more">Click for more</label></div>
+						</a>
+					</td></tr></table>
+
+						<div class="content-popup big" id="content-39">
+							<div class="molecule-title">
+
+								<div class="mtitle DINBold">Solanezumab (soe" la nez' ue mab) </div>
+								<div class="molecule-position">
+									<label>Phase III</label>
+									<label>Business area:  Bio-Medicines</label>
+								</div>
+							</div>
+
+							<div class="molecule-description">
+								LY2062430 (solanezumab) is a biologic entity that binds to soluble monomeric forms of amyloid ß (Ab) after it is produced. LY2062430 is being studied for its potential to slow the progression of Alzheimer's disease.
+<br /><br> For more information on solanezumab clinical studies, click <a href="http://clinicaltrials.gov/ct2/results?term=LY2062430"target="_blank">here</A>.</u></a><br />
+<br> <p style="font-size:10px;">
+NOTE: If you click on the link above it will take you to a site maintained by a third party, which is solely responsible for its content.</p>
+ <br /><br /> <h1><strong>PRESS RELEASES</strong> (1/1/2010-7/19/2016)</h1>
+<p><a href="http://lilly.mediaroom.com/index.php?s=9042&item=137526">Lilly Announces Change To Primary Endpoint Of EXPEDITION3 Study</a>—March 15, 2016<br /><br /><a href="http://lilly.mediaroom.com/index.php?s=9042&item=137458">Lilly To End Contract With The University Of California, San Diego For A4 Alzheimer's Study</a>—August 4, 2015<br /><br /><a href="http://lilly.mediaroom.com/index.php?s=9042&item=137452">Data Using New Delayed-Start Methodology Suggested Benefit Of Early Treatment With Solanezumab In Patients With Mild Alzheimer's Disease</a>—July 22, 2015<br /><br /><a href="http://lilly.mediaroom.com/index.php?s=9042&item=137336">New Data Shows Cognitive Impairment Precedes And Predicts Subsequent Functional Impairment In Patients With Mild Alzheimer's Disease</a>—July 15, 2014<br /><br /><a href="http://lilly.mediaroom.com/index.php?s=9042&item=137332">Lilly To Showcase Data From Its Alzheimer's Disease Portfolio At The Alzheimer's Association International Conference 2014 (AAIC 2014)</a>—July 8, 2014<br /><br /><a href="http://lilly.mediaroom.com/index.php?s=9042&item=137222" target="_blank">Lilly to Host Conference Call to Discuss Trial Design of New Solanezumab Phase 3 Study</a> – July 3, 2013<br /><br /><a href="http://lilly.mediaroom.com/index.php?s=9042&item=136187" target="_blank">Lilly Provides Update on Next Steps for Solanezumab</a>—December 12, 2012<br /><br /><a href="http://lilly.mediaroom.com/index.php?s=9042&item=134212" target="_blank">Lilly Announces Detailed Results of the Phase 3 Solanezumab EXPEDITION Studies Following a Presentation of the Independent Analyses by the Alzheimer's Disease Cooperative Study (ADCS)</a>—October 8, 2012<br /><br /><a href="http://lilly.mediaroom.com/index.php?s=9042&item=132129" target="_blank">Eli Lilly and Company Announces Top-Line Results on Solanezumab Phase 3 Clinical Trials in Patients with Alzheimer's Disease</a>—August 24, 2012</p>
+							</div>
+							<a class="bClose">&nbsp;</a>
+						</div>
+						<script type="text/javascript">
+							$("#click-content-39").bind('click', function(){
+								$("#content-39").bPopup();
+								return false;
+							});
+						</script>
+					</li><li id='cell-40' class='big '>
+					<table cellspacing="0" cellpadding="0"><tr><td>
+						<a id="click-content-40" class="big bignme_cell bigtooltip_under" title="CLICK FOR MORE">
+							<div class="molecule-inner-content"><label>*Tanezumab <br>osteoarthritic<br> pain</label><label class="toolt">New Molecular Entity</label><label class="click_for_more">Click for more</label></div>
+						</a>
+					</td></tr></table>
+
+						<div class="content-popup big" id="content-40">
+							<div class="molecule-title">
+
+								<div class="mtitle DINBold">Tanezumab (ta nez' oo mab)</div>
+								<div class="molecule-position">
+									<label>Phase III</label>
+									<label>Business area:  Bio-Medicines</label>
+								</div>
+							</div>
+
+							<div class="molecule-description">
+								Tanezumab, a biologic entity, is a humanized monoclonal antibody that inhibits nerve growth factor. Tanezumab is being studied in collaboration with Pfizer for the treatment of multiple pain indications including osteoarthritis pain.<br /><br /> For more information on tanezumab clinical studies, click <a href="http://clinicaltrials.gov/ct2/results?term=tanezumab"target="_blank">here</a>.<br />
+<br> <p style="font-size:10px;">
+NOTE: If you click on the link above it will take you to a site maintained by a third party, which is solely responsible for its content.</p> <br /><br /> <h1><strong>PRESS RELEASES</strong> (1/1/2010-7/19/2016)</h1>
+<p><a href="http://lilly.mediaroom.com/index.php?s=9042&item=137402">Pfizer And Lilly Preparing To Resume Phase 3 Chronic Pain Program For Tanezumab</a> – March 23, 2015</p>
+<p> </p>
+							</div>
+							<a class="bClose">&nbsp;</a>
+						</div>
+						<script type="text/javascript">
+							$("#click-content-40").bind('click', function(){
+								$("#content-40").bPopup();
+								return false;
+							});
+						</script>
+					</li><li id='cell-41' class='big '>
+					<table cellspacing="0" cellpadding="0"><tr><td>
+						<a id="click-content-41" class="big bignilex_cell bigtooltip_under" title="CLICK FOR MORE">
+							<div class="molecule-inner-content"><label>Galcanezumab<br>migraine prevention</label><label class="toolt">Select NILEX</label><label class="click_for_more">Click for more</label></div>
+						</a>
+					</td></tr></table>
+
+						<div class="content-popup big" id="content-41">
+							<div class="molecule-title">
+
+								<div class="mtitle DINBold">Galcanezumab<br>migraine prevention</div>
+								<div class="molecule-position">
+									<label>Phase III</label>
+									<label>Business area:  Research</label>
+								</div>
+							</div>
+
+							<div class="molecule-description">
+								LY2951742 (galcanezumab), a CGRP monoclonal antibody, is a biologic entity that binds and inhibits the activity of calcitonin gene related peptide (CGRP). LY2951742 is being studied for the prevention of both chronic and episodic migraine.
+<br /><br>
+For more information on galcanezumab clinical studies, click <a href="http://clinicaltrials.gov/ct2/results?term=LY2951742"target="_blank">here</A>.</u></a><br />
+<br> <p style="font-size:10px;">NOTE: If you click on the link above it will take you to a site maintained by a third party, which is solely responsible for its content.</p><br /> <br /><br /> <h1><strong>PRESS RELEASES</strong> (1/1/2010-7/19/2016)</h1>
+<div><a href="http://lilly.mediaroom.com/index.php?s=9042&item=137444">Lilly's Investigational Medicine for Prevention of Migraine Met Primary Endpoint in a Phase 2b Study</a> – June 17, 2015</div>
+<br /><a href="http://lilly.mediaroom.com/index.php?s=9042&item=137274">Lilly Announces Acquisition of CGRP Antibody for Migraine Prevention from Arteaus Therapeutics</a> – January 13, 2014
+							</div>
+							<a class="bClose">&nbsp;</a>
+						</div>
+						<script type="text/javascript">
+							$("#click-content-41").bind('click', function(){
+								$("#content-41").bPopup();
+								return false;
+							});
+						</script>
+					</li><li id='cell-42' class='big '>
+					<table cellspacing="0" cellpadding="0"><tr><td>
+						<a id="click-content-42" class="big bignilex_cell bigtooltip_under" title="CLICK FOR MORE">
+							<div class="molecule-inner-content"><label>Solanezumab<br>preclinical AD</label><label class="toolt">NILEX</label><label class="click_for_more">Click for more</label></div>
+						</a>
+					</td></tr></table>
+
+						<div class="content-popup big" id="content-42">
+							<div class="molecule-title">
+
+								<div class="mtitle DINBold">Solanezumab (soe" la nez' ue mab) </div>
+								<div class="molecule-position">
+									<label>Phase III</label>
+									<label>Business area:  Bio-Medicines</label>
+								</div>
+							</div>
+
+							<div class="molecule-description">
+								LY2062430 (solanezumab) is a biologic entity that binds to soluble monomeric forms of amyloid ß (Ab) after it is produced. LY2062430 is being studied for its potential to slow the progression of Alzheimer's disease.
+<br /><br> For more information on solanezumab clinical studies, click <a href="http://clinicaltrials.gov/ct2/results?term=LY2062430"target="_blank">here</A>.</u></a><br />
+<br> <p style="font-size:10px;">
+NOTE: If you click on the link above it will take you to a site maintained by a third party, which is solely responsible for its content.</p>
+ <br /><br /> <h1><strong>PRESS RELEASES</strong> (1/1/2010-7/19/2016)</h1>
+<div> None during this time period.</div>
+							</div>
+							<a class="bClose">&nbsp;</a>
+						</div>
+						<script type="text/javascript">
+							$("#click-content-42").bind('click', function(){
+								$("#content-42").bPopup();
+								return false;
+							});
+						</script>
+					</li><li id='cell-43' class='big '>
+					<table cellspacing="0" cellpadding="0"><tr><td>
+						<a id="click-content-43" class="big bignilex_cell bigtooltip_under" title="CLICK FOR MORE">
+							<div class="molecule-inner-content"><label>*Tanezumab<br>cancer pain</label><label class="toolt">NILEX</label><label class="click_for_more">Click for more</label></div>
+						</a>
+					</td></tr></table>
+
+						<div class="content-popup big" id="content-43">
+							<div class="molecule-title">
+
+								<div class="mtitle DINBold">Tanezumab (ta  nez'  oo  mab)</div>
+								<div class="molecule-position">
+									<label>Phase III</label>
+									<label>Business area:  Bio-Medicines</label>
+								</div>
+							</div>
+
+							<div class="molecule-description">
+								Tanezumab, a biologic entity, is a humanized monoclonal antibody that inhibits nerve growth factor. Tanezumab is being studied in collaboration with Pfizer for the treatment of cancer pain.<br /><br /> For more information on tanezumab clinical studies, click <a href="http://clinicaltrials.gov/ct2/results?term=tanezumab"target="_blank">here</a>.<br />
+<br> <p style="font-size:10px;">
+NOTE: If you click on the link above it will take you to a site maintained by a third party, which is solely responsible for its content.</p> <br /><br /> <h1><strong>PRESS RELEASES</strong> (1/1/2010-4/19/2016)</h1>
+<div>None during this time period.</div>
+							</div>
+							<a class="bClose">&nbsp;</a>
+						</div>
+						<script type="text/javascript">
+							$("#click-content-43").bind('click', function(){
+								$("#content-43").bPopup();
+								return false;
+							});
+						</script>
+					</li><li id='cell-44' class='big '>
+					<table cellspacing="0" cellpadding="0"><tr><td>
+						<a id="click-content-44" class="big bignilex_cell bigtooltip_under" title="CLICK FOR MORE">
+							<div class="molecule-inner-content"><label>*Tanezumab chronic lower<br>back pain</label><label class="toolt">NILEX</label><label class="click_for_more">Click for more</label></div>
+						</a>
+					</td></tr></table>
+
+						<div class="content-popup big" id="content-44">
+							<div class="molecule-title">
+
+								<div class="mtitle DINBold">Tanezumab (ta  nez'  oo  mab)</div>
+								<div class="molecule-position">
+									<label>Phase III</label>
+									<label>Business area:  Bio-Medicines</label>
+								</div>
+							</div>
+
+							<div class="molecule-description">
+								Tanezumab, a biologic entity, is a humanized monoclonal antibody that inhibits nerve growth factor. Tanezumab is being studied in collaboration with Pfizer for the treatment of chronic lower back pain.<br /><br /> For more information on tanezumab clinical studies, click <a href="http://clinicaltrials.gov/ct2/results?term=tanezumab"target="_blank">here</a>.<br />
+<br> <p style="font-size:10px;">
+NOTE: If you click on the link above it will take you to a site maintained by a third party, which is solely responsible for its content.</p> <br /><br /> <h1><strong>PRESS RELEASES</strong> (1/1/2010-7/19/2016)</h1>
+<div>None during this time period.</div>
+							</div>
+							<a class="bClose">&nbsp;</a>
+						</div>
+						<script type="text/javascript">
+							$("#click-content-44").bind('click', function(){
+								$("#content-44").bPopup();
+								return false;
+							});
+						</script>
+					</li><li id='cell-45' class='big '>
+					<table cellspacing="0" cellpadding="0"><tr><td>
+						<a id="click-content-45" class="big bigdiagnostic_cell bigtooltip_under" title="CLICK FOR MORE">
+							<div class="molecule-inner-content"><label>Tau Imaging<br>Agent</label><label class="toolt">Diagnostic</label><label class="click_for_more">Click for more</label></div>
+						</a>
+					</td></tr></table>
+
+						<div class="content-popup big" id="content-45">
+							<div class="molecule-title">
+
+								<div class="mtitle DINBold">Tau imaging agent</div>
+								<div class="molecule-position">
+									<label>Phase III</label>
+									<label>Business area:  Research</label>
+								</div>
+							</div>
+
+							<div class="molecule-description">
+								18F-AV-1451 (Tau imaging agent) is a chemical entity  PET imaging agent being studied for the imaging of Tau pathology.<br /><br> For more information on 18F-AV-1451 clinical studies, click <a href="http://clinicaltrials.gov/ct2/results?term=18F-AV-1451"target="_blank">here</A>.</u></a><br />
+<br> <p style="font-size:10px;">
+ NOTE: If you click on the link above it will take you to a site maintained by a third party, which is solely responsible for its content.</p>
+
+ <br /><br /> <div>
+<h1><strong>PRESS RELEASES</strong> (1/1/2010-7/19/2016)</h1>
+</div>
+<a href="http://lilly.mediaroom.com/index.php?s=9042&item=137332">Lilly To Showcase Data From Its Alzheimer's Disease Portfolio At The Alzheimer's Association International Conference 2014 (AAIC 2014)</a>—July 8, 2014<br /><br /><br />
+							</div>
+							<a class="bClose">&nbsp;</a>
+						</div>
+						<script type="text/javascript">
+							$("#click-content-45").bind('click', function(){
+								$("#content-45").bPopup();
+								return false;
+							});
+						</script>
+					</li><li id='cell-46' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-47' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-48' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-49' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-50' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-51' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-52' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-53' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-54' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li>
+													</ul>
+												</div>
+											</div>
+
+											<div class="cells-container">
+												<div class="cells-container-inner">
+													<h1 class="toggle active"><label class="exp_open"></label><span>Phase II</span></h1>
+													<ul class="molecule-container">
+										<li id='cell-55' class='big '>
+					<table cellspacing="0" cellpadding="0"><tr><td>
+						<a id="click-content-55" class="big bignme_cell bigtooltip_under" title="CLICK FOR MORE">
+							<div class="molecule-inner-content"><label>Edivoxetine <br>CNS disorder</label><label class="toolt">New Molecular Entity</label><label class="click_for_more">Click for more</label></div>
+						</a>
+					</td></tr></table>
+
+						<div class="content-popup big" id="content-55">
+							<div class="molecule-title">
+
+								<div class="mtitle DINBold">Edivoxetine (e" di vox' e teen  hye" droe klor' ide) </div>
+								<div class="molecule-position">
+									<label>Phase II</label>
+									<label>Business area:  Bio-Medicines</label>
+								</div>
+							</div>
+
+							<div class="molecule-description">
+								LY2216684 (edivoxetine) is a chemical entity that inhibits the reuptake of norepinephrine. LY2216684 is being studied for multiple CNS disorders. Molecule is owned by a 3rd party, Lilly retains rights. <br /><br> For more information on edivoxetine clinical studies, click <a href="http://clinicaltrials.gov/ct2/results?term=LY2216684"target="_blank">here</a>.<br />
+<br> <p style="font-size:10px;">
+NOTE: If you click on the link above it will take you to a site maintained by a third party, which is solely responsible for its content.</p> <br /><br />
+							</div>
+							<a class="bClose">&nbsp;</a>
+						</div>
+						<script type="text/javascript">
+							$("#click-content-55").bind('click', function(){
+								$("#content-55").bPopup();
+								return false;
+							});
+						</script>
+					</li><li id='cell-56' class='big '>
+					<table cellspacing="0" cellpadding="0"><tr><td>
+						<a id="click-content-56" class="big bigdiagnostic_cell bigtooltip_under" title="CLICK FOR MORE">
+							<div class="molecule-inner-content"><label>Florbenazine</label><label class="toolt">Diagnostic</label><label class="click_for_more">Click for more</label></div>
+						</a>
+					</td></tr></table>
+
+						<div class="content-popup big" id="content-56">
+							<div class="molecule-title">
+
+								<div class="mtitle DINBold">Florbenazine (flor ben' a zeen)</div>
+								<div class="molecule-position">
+									<label>Phase II</label>
+									<label>Business area:  Research</label>
+								</div>
+							</div>
+
+							<div class="molecule-description">
+								Florbenazine (18F-AV-133) is a chemical entity PET imaging agent being studied for the imaging of Parkinson's disease pathology. <br /><br> For more information on 18F-AV-133 clinical studies, click <a href="http://clinicaltrials.gov/ct2/results?term=AV-133&Search=Search"target="_blank">here</A>.</u></a><br />
+<br> <p style="font-size:10px;">
+ NOTE: If you click on the link above it will take you to a site maintained by a third party, which is solely responsible for its content.</p>
+
+ <br /><br />
+							</div>
+							<a class="bClose">&nbsp;</a>
+						</div>
+						<script type="text/javascript">
+							$("#click-content-56").bind('click', function(){
+								$("#content-56").bPopup();
+								return false;
+							});
+						</script>
+					</li><li id='cell-57' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-58' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-59' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-60' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-61' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-62' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-63' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-64' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-65' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-66' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-67' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-68' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-69' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-70' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-71' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-72' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-73' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-74' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-75' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-76' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-77' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-78' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-79' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-80' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-81' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-82' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-83' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-84' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-85' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-86' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-87' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-88' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-89' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-90' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li>
+													</ul>
+												</div>
+											</div>
+
+												<div class="cells-container">
+													<div class="cells-container-inner">
+													<h1 class="toggle active"><label class="exp_open"></label><span>Phase I</span></h1>
+													<ul class="molecule-container">
+											<li id='cell-91' class='big '>
+					<table cellspacing="0" cellpadding="0"><tr><td>
+						<a id="click-content-91" class="big bignme_cell bigtooltip_under" title="CLICK FOR MORE">
+							<div class="molecule-inner-content"><label>A ß antibody Fab<br>PEG<br>Alzheimer's</label><label class="toolt">New Molecular Entity</label><label class="click_for_more">Click for more</label></div>
+						</a>
+					</td></tr></table>
+
+						<div class="content-popup big" id="content-91">
+							<div class="molecule-title">
+
+								<div class="mtitle DINBold">A ß antibody Fab PEG  Alzheimer's</div>
+								<div class="molecule-position">
+									<label>Phase I</label>
+									<label>Business area:  Research</label>
+								</div>
+							</div>
+
+							<div class="molecule-description">
+								"A b Antibody Fab PEG" is a new biologic entity being studied for the treatment of Alzheimer's disease. <br /><br />
+							</div>
+							<a class="bClose">&nbsp;</a>
+						</div>
+						<script type="text/javascript">
+							$("#click-content-91").bind('click', function(){
+								$("#content-91").bPopup();
+								return false;
+							});
+						</script>
+					</li><li id='cell-92' class='big '>
+					<table cellspacing="0" cellpadding="0"><tr><td>
+						<a id="click-content-92" class="big bignme_cell bigtooltip_under" title="CLICK FOR MORE">
+							<div class="molecule-inner-content"><label>BACE inhibitor <br/> Alzheimer’s</label><label class="toolt">New Molecular Entity</label><label class="click_for_more">Click for more</label></div>
+						</a>
+					</td></tr></table>
+
+						<div class="content-popup big" id="content-92">
+							<div class="molecule-title">
+
+								<div class="mtitle DINBold">BACE inhibitor Alzheimer's</div>
+								<div class="molecule-position">
+									<label>Phase I</label>
+									<label>Business area:  Research</label>
+								</div>
+							</div>
+
+							<div class="molecule-description">
+								"BACE Inhibitor" is a new chemical entity being studied for the treatment of Alzheimer's disease. <br /><br />
+							</div>
+							<a class="bClose">&nbsp;</a>
+						</div>
+						<script type="text/javascript">
+							$("#click-content-92").bind('click', function(){
+								$("#content-92").bPopup();
+								return false;
+							});
+						</script>
+					</li><li id='cell-93' class='big '>
+					<table cellspacing="0" cellpadding="0"><tr><td>
+						<a id="click-content-93" class="big bignme_cell bigtooltip_under" title="CLICK FOR MORE">
+							<div class="molecule-inner-content"><label>D1 potentiator dementia </label><label class="toolt">New Molecular Entity.</label><label class="click_for_more">Click for more</label></div>
+						</a>
+					</td></tr></table>
+
+						<div class="content-popup big" id="content-93">
+							<div class="molecule-title">
+
+								<div class="mtitle DINBold">D1 potentiator</div>
+								<div class="molecule-position">
+									<label>Phase I</label>
+									<label>Business area:  Research</label>
+								</div>
+							</div>
+
+							<div class="molecule-description">
+								"D1 potentiator" is a new chemical entity being studied for the treatment of dementia. <br /><br />
+							</div>
+							<a class="bClose">&nbsp;</a>
+						</div>
+						<script type="text/javascript">
+							$("#click-content-93").bind('click', function(){
+								$("#content-93").bPopup();
+								return false;
+							});
+						</script>
+					</li><li id='cell-94' class='big '>
+					<table cellspacing="0" cellpadding="0"><tr><td>
+						<a id="click-content-94" class="big bignme_cell bigtooltip_under" title="CLICK FOR MORE">
+							<div class="molecule-inner-content"><label>N3pG-Aß MAb <br> Alzheimer's <br> disease</label><label class="toolt">New Molecular Entity</label><label class="click_for_more">Click for more</label></div>
+						</a>
+					</td></tr></table>
+
+						<div class="content-popup big" id="content-94">
+							<div class="molecule-title">
+
+								<div class="mtitle DINBold">N3pG-Aß Monoclonal Antibody</div>
+								<div class="molecule-position">
+									<label>Phase I</label>
+									<label>Business area:  Research</label>
+								</div>
+							</div>
+
+							<div class="molecule-description">
+								"N3pG-Aß Monoclonal Antibody" is a new biologic entity being studied for the treatment of Alzheimer's disease.
+ <br /><br />
+							</div>
+							<a class="bClose">&nbsp;</a>
+						</div>
+						<script type="text/javascript">
+							$("#click-content-94").bind('click', function(){
+								$("#content-94").bPopup();
+								return false;
+							});
+						</script>
+					</li><li id='cell-95' class='big '>
+					<table cellspacing="0" cellpadding="0"><tr><td>
+						<a id="click-content-95" class="big bignme_cell bigtooltip_under" title="CLICK FOR MORE"><img class="minfoimg" align="absmiddle" src="./img/bigachived_milestone_molecule.png" alt="" />
+							<div class="molecule-inner-content"><label>Tau MAb <br> Alzheimer's</label><label class="toolt">New Molecular Entity </label><label class="click_for_more">Click for more</label></div>
+						</a>
+					</td></tr></table>
+
+						<div class="content-popup big" id="content-95">
+							<div class="molecule-title">
+
+										<div class="minfobg"><img src="./img/bigachived_milestone_molecule.png" alt="" /></div>
+
+								<div class="mtitle DINBold">Tau Antibody</div>
+								<div class="molecule-position">
+									<label>Phase I</label>
+									<label>Business area:  Research</label><label style='display:block;'>Molecule That Achieved Milestone </label>
+								</div>
+							</div>
+
+							<div class="molecule-description">
+								"Tau Antibody" is a new biologic entity being studied for the treatment of Alzheimer's disease. <br /><br />
+							</div>
+							<a class="bClose">&nbsp;</a>
+						</div>
+						<script type="text/javascript">
+							$("#click-content-95").bind('click', function(){
+								$("#content-95").bPopup();
+								return false;
+							});
+						</script>
+					</li><li id='cell-96' class='big '>
+					<table cellspacing="0" cellpadding="0"><tr><td>
+						<a id="click-content-96" class="big bignme_cell bigtooltip_under" title="CLICK FOR MORE">
+							<div class="molecule-inner-content"><label>Pomaglumetad methionil<br>schizophrenia</label><label class="toolt">New molecular entity</label><label class="click_for_more">Click for more</label></div>
+						</a>
+					</td></tr></table>
+
+						<div class="content-popup big" id="content-96">
+							<div class="molecule-title">
+
+								<div class="mtitle DINBold">Pomaglumetad methionil</div>
+								<div class="molecule-position">
+									<label>Phase I</label>
+									<label>Business area:  Research</label>
+								</div>
+							</div>
+
+							<div class="molecule-description">
+								LY2140023 monohydrate (pomaglumetad methionil) is a chemical entity agonist of the metabotropic glutamate 2/3 receptors. LY2140023 licensed to Denovo Biopharma to identify genetic biomarkers and to screen for appropriate patient subsets for further study in future clinical trials. <br /><br />
+							</div>
+							<a class="bClose">&nbsp;</a>
+						</div>
+						<script type="text/javascript">
+							$("#click-content-96").bind('click', function(){
+								$("#content-96").bPopup();
+								return false;
+							});
+						</script>
+					</li><li id='cell-97' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-98' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-99' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-100' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-101' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-102' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-103' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-104' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-105' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-106' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-107' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-108' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-109' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-110' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-111' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-112' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-113' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-114' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-115' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-116' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-117' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-118' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-119' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-120' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-121' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-122' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-123' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-124' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-125' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li><li id='cell-126' class='big empty'>
+					<span class="big bigempty_cell no_bg">&nbsp;</span>
+				</li>
+														</ul>
+													</div>
+
+												</div>
+
+										<div class="disclaimer"><b>Pipeline Disclaimer</b><br />The information included on this site reflects Eli Lilly and Company's clinical development pipeline and is not intended for promotional purposes. It includes both new molecular entities as well as select new indications or line extensions of currently-approved products, that are in clinical development. There are significant risks and uncertainties in pharmaceutical research and development. Scientific and regulatory hurdles may cause pipeline molecules to be discontinued, delayed or fail to reach the market. There can be no guarantee that pipeline molecules will receive regulatory approval or that they will prove to be commercially successful. Information is current as of July 19, 2016. Lilly assumes no duty to update this information.
+<br><br>
+For competitive reasons, some pipeline molecules are not identified; in those instances, only the therapeutic area in which the molecule is being studied is listed.</div>
+										<p class="footer">
+											Property of Eli Lilly and Company.
+										</p>
+									</div>
+									<div id="content-right">
+
+										<div class="molecule-info2">
+										<h1>Legend</h1>
+									<a href="full_legend.html"><div class="molecule-data"><img class="fl" align="absmiddle" src="./img/new_molecule.png" alt="" /><div class="molecule-text">New Molecule</div></div></a><a href="full_legend.html"><div class="molecule-data"><img class="fl" align="absmiddle" src="./img/achived_milestone_molecule.png" alt="" /><div class="molecule-text">Molecule That Achieved Milestone </div></div></a><a href="full_legend.html"><div class="molecule-data"><img class="fl" align="absmiddle" src="./img/scientific_name_given.png" alt="" /><div class="molecule-text">Nonproprietary Name Granted</div></div></a><a href="full_legend.html"><div class="molecule-data"><img class="fl" align="absmiddle" src="./img/later_phase_molecule.png" alt="" /><div class="molecule-text">Molecule Moved to Earlier Phase</div></div></a><a href="full_legend.html"><div class="molecule-data"><img class="fl" align="absmiddle" src="./img/lost_molecule.png" alt="" /><div class="molecule-text">Lost Through Attrition</div></div></a><a href="full_legend.html"><div class="molecule-data"><img class="fl" align="absmiddle" src="./img/checked.png" alt="" /><div class="molecule-text">Regulatory Approval Achieved</div></div></a>
+											<div class="molecule-data">
+												*Commercial Collaboration
+											</div>
+										</div>
+									<ul class="molecule-info">
+													<li>
+														<span class="nme_cell"><b>NME</b></span>
+													</li>
+
+													<li>
+														<span class="nilex_cell"><b>Select NILEX</b></span>
+													</li>
+
+													<li>
+														<span class="diagnostic_cell"><b>Diagnostic</b></span>
+													</li>
+												</ul>
+										<div id="full_legend_link">
+											For more information about Lilly's interactive pipeline website, <a href="full_legend.html">click here</a>
+										</div>
+									</div>
+								</div>
+								<div id="footer">
+								</div>
+							</div>
+
+								<script type="text/javascript">
+									$(window).load(function(){
+										var cCenterHeight = $('#content-center').height();
+										var cLeftHeight = $('#content-left').height();
+										var paddingTop = cCenterHeight-cLeftHeight-10;
+										if(paddingTop > 0){
+											//$('.footer').css('padding-top', parseInt(paddingTop)+'px');
+										}
+										$('.molecule-container').each(function(){
+
+											if(!$(this).has('li').length){
+												$(this).css('padding', '0');
+											}
+
+											$(this).find('a.big').each(function(){
+
+												var a_height = $(this).height();
+
+												var label_height = $(this).find('label').height();
+												if(label_height != 0){
+													$(this).find('label').css('padding-top', parseInt(((a_height-label_height)/2)-5));
+												}
+												else{
+													$(this).find('label').css('padding-top', 12);
+												}
+											});
+
+										});
+										//Set default open/close settings
+										//$('.molecule-container').hide(); //Hide/close all containers
+										//$('.cells-container-inner h1:last').addClass('active').next().hide();
+
+									});
+								</script>
+
+							<script type="text/javascript">
+								$(document).ready(function(){
+									// align text in center
+									$('.molecule-info2 .molecule-data').each(function(){
+										var molecule_text_height = $(this).children('.molecule-text').height();
+										if(molecule_text_height < 23){
+											$(this).children('.molecule-text').css('padding-top', (23-molecule_text_height)/2);
+										}
+									});
+									//On Click
+									$('.cells-container-inner h1.toggle').click(function(){
+											if($(this).hasClass('active')){
+												$(this).toggleClass('active').next().slideUp(); //Add "active" state to clicked trigger and slide down the immediate next container
+												$(this).children('label').toggleClass('exp_open');
+											}else{
+												$(this).toggleClass('active').next().slideDown(); //Add "active" state to clicked trigger and slide down the immediate next container
+												$(this).children('label').toggleClass('exp_open');
+											}
+										return false; //Prevent the browser jump to the link anchor
+									});
+									$('.molecule-container').each(function(){
+										var i = 0;
+										var j = 0;
+										var a = new Array(3);
+										$(this).find('li').each(function(){
+											if($(this).hasClass('empty')){
+												a[i] = $(this);
+												j++;
+											}
+											i++;
+											if(j == 3){
+												for(var k = 0;k < 3;k++){
+													a[k].remove();
+												}
+											}
+											if(i == 3){
+												i = 0;
+												j = 0;
+											}
+										});
+									});
+								});
+
+							</script>
+						<!-- START OF SmartSource Data Collector TAG -->
+<!-- Copyright (c) 1996-2010 WebTrends Inc.  All rights reserved. -->
+<!-- Version: 9.3.0 -->
+<!-- Tag Builder Version: 3.1  -->
+<!-- Created: 2/10/2011 5:17:20 PM -->
+<script src="webtrends.js" type="text/javascript"></script>
+<!-- ----------------------------------------------------------------------------------- -->
+<!-- Warning: The two script blocks below must remain inline. Moving them to an external -->
+<!-- JavaScript include file can cause serious problems with cross-domain tracking.      -->
+<!-- ----------------------------------------------------------------------------------- -->
+<script type="text/javascript">
+//<![CDATA[
+var _tag=new WebTrends();
+_tag.dcsGetId();
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+_tag.dcsCustom=function(){
+// Add custom parameters here.
+//_tag.DCSext.param_name=param_value;
+}
+_tag.dcsCollect();
+//]]>
+</script>
+<noscript>
+<div><img alt="DCSIMG" id="DCSIMG" width="1" height="1" src="http://statse.webtrendslive.com/dcskykqjqvz5bd05pjea7z15r_7k3s/njs.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=9.3.0&amp;WT.dcssip=www.lilly.com,lilly.com,elilly.com"/></div>
+</noscript>
+<!-- END OF SmartSource Data Collector TAG -->
+						</body>
+						</html>
