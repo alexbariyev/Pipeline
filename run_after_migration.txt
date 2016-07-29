@@ -1,0 +1,3 @@
+update cells_content set bgColor = replace(bgColor,'f0bdcc','pink');
+update cells_content set bgColor = replace(bgColor,'bbbbbb','grey');
+update cells_content set triangle = replace(triangle,'00a652','achived_milestone_molecule');
